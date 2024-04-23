@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define IN		1		//ÒıºÅÄÚ
-#define OUT		0		//ÒıºÅÍâ
+#define IN		1		//å¼•å·å†…
+#define OUT		0		//å¼•å·å¤–
 
 int delete(int c,int state);
 int main(){
@@ -19,17 +19,17 @@ int main(){
 int delete(int c,int state){
 	if(c == '/' && state != IN){
 		c = getchar();
-		if(c == '/'){		//ÕâÖÖ×¢ÊÍ//
+		if(c == '/'){		//è¿™ç§æ³¨é‡Š//
 			while((c = getchar()) != '\n');
-			//Óöµ½'\n'½áÊø×¢ÊÍ
+			//é‡åˆ°'\n'ç»“æŸæ³¨é‡Š
 			putchar(c);
 		}
-		else{				//ÕâÖÖ×¢ÊÍ/**/
+		else{				//è¿™ç§æ³¨é‡Š/**/
 			while((c = getchar()))
 				if(c == '*' && getchar() == '/');
 		}
 		
-		return c;	//É¾³ı×¢ÊÍ·µ»Ø0
+		return c;	//åˆ é™¤æ³¨é‡Šè¿”å›0
 	}
-	//Ã»É¾³ı×¢ÊÍ·µ»Ø1
+	//æ²¡åˆ é™¤æ³¨é‡Šè¿”å›1
 	return c;}

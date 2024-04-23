@@ -10,7 +10,7 @@ int main(){
 	
 	nw = nleng = 0;
 	state = OUT;
-	//输入部分
+	//杈撳叆閮ㄥ垎
 	while ((c = getchar()) != EOF){
 		if (c == ' ' || c == '\n' || c == '\t'){
 			if (state == IN){
@@ -25,8 +25,8 @@ int main(){
 			++nleng;
 		}
 	}
-	//打印部分
-	printf("一共有%d个单词\n", nw);
+	//鎵撳嵃閮ㄥ垎
+	printf("涓�鍏辨湁%d涓崟璇峔n", nw);
 	for (i = 0; i < nw; ++i){
 		printf("%3d:",i+1);
 		for (j = 0; j < length[i]; ++j)

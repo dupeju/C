@@ -1,13 +1,13 @@
 #include <stdio.h>
-#define MAXLINE 1000		 //ÔÊĞíÊäÈëĞĞ×î³¤³¤¶È
+#define MAXLINE 1000		 //å…è®¸è¾“å…¥è¡Œæœ€é•¿é•¿åº¦
 
 int getline(char line[], int maxline);
 int copy(char to[], char from[]);
 
-//´òÓ¡×î³¤µÄÊä³öĞĞ
+//æ‰“å°æœ€é•¿çš„è¾“å‡ºè¡Œ
 int main(){
-	int len;		//µ±Ç°ĞĞ³¤¶È
-	int max;		//Ä¿Ç°·¢ÏÖ×î³¤µÄĞĞ³¤¶È
+	int len;		//å½“å‰è¡Œé•¿åº¦
+	int max;		//ç›®å‰å‘ç°æœ€é•¿çš„è¡Œé•¿åº¦
 	char line[MAXLINE];
 	int longest[MAXLINE];
 	int i, j;
@@ -25,7 +25,7 @@ int main(){
 	return 0;
 }
 
-//getlineº¯Êı:½«Ò»ĞĞ¶ÁÈës[]²¢·µ»ØÆä³¤¶È
+//getlineå‡½æ•°:å°†ä¸€è¡Œè¯»å…¥s[]å¹¶è¿”å›å…¶é•¿åº¦
 int getline(char s[], int lim){
 	int c, i;
 	
@@ -38,7 +38,7 @@ int getline(char s[], int lim){
 	s[i] = '\0';
 	return i;
 }
-//copyº¯Êı:½«from¸´ÖÆµ½to;ÕâÀï¼ÙÉèto×ã¹»´ó
+//copyå‡½æ•°:å°†fromå¤åˆ¶åˆ°to;è¿™é‡Œå‡è®¾toè¶³å¤Ÿå¤§
 int copy(char to[], char from[]){
 	int i;
 	i = 0;
