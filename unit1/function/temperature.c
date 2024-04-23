@@ -7,11 +7,11 @@ int main(){
 	int select = 0;
 	scanf("%d", &select);
 	if (select){
-		//»ªÊÏ¶È×ªÉãÊÏ¶È
+		//åæ°åº¦è½¬æ‘„æ°åº¦
 		fahr();
 	}
 	else{
-		//ÉãÊÏ¶È×ª»ªÊÏ¶È
+		//æ‘„æ°åº¦è½¬åæ°åº¦
 		celsius();
 	}
 	return 0;
@@ -20,11 +20,11 @@ void fahr(){
 	float fahr;
 	//celsius = 9/5 * fahr + 32
 	scanf("%f", &fahr);
-	printf("%.1f»ªÊÏ¶ÈµÈÓÚ%.1fÉãÊÏ¶È\n", fahr, 5.0 / 9.0 * (fahr - 32.0));
+	printf("%.1fåæ°åº¦ç­‰äº%.1fæ‘„æ°åº¦\n", fahr, 5.0 / 9.0 * (fahr - 32.0));
 }
 void celsius(){
 	float celsius;
 	//celsius = 5/9 * (celsius - 32)
 	scanf("%f", &celsius);
-	printf("%.1fÉãÊÏ¶ÈµÈÓÚ»ªÊÏ¶È%.1f\n", celsius, 9.0 / 5.0 * celsius + 32.0);
+	printf("%.1fæ‘„æ°åº¦ç­‰äºåæ°åº¦%.1f\n", celsius, 9.0 / 5.0 * celsius + 32.0);
 }

@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define IN	1	//在单词内
-#define OUT	0	//在单词外
+#define IN	1	//鍦ㄥ崟璇嶅唴
+#define OUT	0	//鍦ㄥ崟璇嶅
 int main(){
 	int c, nl, nw, nc, state;
 	

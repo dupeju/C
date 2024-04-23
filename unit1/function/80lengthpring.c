@@ -1,7 +1,7 @@
 #include <stdio.h>
-#define MAXLEN 1000		//Ò»ĞĞµÄ³¤¶ÈµÄ×î´óÖµ
-#define MAXWID 1000		//¿ÉÈİÄÉ³¤¶È³¬¹ı80¸ö×Ö·ûµÄÊäÈëĞĞµÄ×î´óÖµ
-#define MIN 0			//MIN:´óÓÚMINµÄÊäÈëĞĞµÄ¶¼½«Êä³ö
+#define MAXLEN 1000		//ä¸€è¡Œçš„é•¿åº¦çš„æœ€å¤§å€¼
+#define MAXWID 1000		//å¯å®¹çº³é•¿åº¦è¶…è¿‡80ä¸ªå­—ç¬¦çš„è¾“å…¥è¡Œçš„æœ€å¤§å€¼
+#define MIN 0			//MIN:å¤§äºMINçš„è¾“å…¥è¡Œçš„éƒ½å°†è¾“å‡º
 
 int getline(char line[], int maxline);
 void copy(char to[], char from[]);

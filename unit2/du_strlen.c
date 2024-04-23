@@ -4,7 +4,7 @@ int strlen(char s[]);
 int main(){
 	int n;
 	n = strlen("dupengjun");
-	printf("strÓĞ%d¸ö×Ö·û\n", n);
+	printf("stræœ‰%dä¸ªå­—ç¬¦\n", n);
 	return 0;
 }
 int strlen(char s[]){
